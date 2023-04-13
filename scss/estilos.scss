@@ -63,6 +63,9 @@ header {
             font-size: 25px;
             color: #ffffff;
         }
+        .burguer {
+            cursor: pointer;
+        }
         .navbar ul li {
             position:relative;
             float: left;
@@ -76,14 +79,10 @@ header {
         #menu {
             display: none;
         }
-        
         .menu-icono {
             width: 25px;
         }
-        .menu label {
-            cursor: pointer;
-            display: none;
-        }
+        
     }
     .header-content {
         display: flex;
@@ -91,7 +90,7 @@ header {
             padding: 150px 150px 0px 0px;
             h1 {
                 color:#ffffff;
-                font-size: 55px;
+                font-size: 5vh;
                 text-transform: uppercase;
                 font-weight: 500;
                 line-height: 55px;
@@ -101,7 +100,7 @@ header {
                 margin-top: 25px;
                 color: #aab1ff;
                 text-transform: uppercase;
-                font-size: 35px;
+                font-size: 4vh;
                 line-height: 40px;
             }
             
@@ -250,8 +249,8 @@ footer {
         padding: 20px;
     }
 
-    .menu label {
-        display: initial;
+    .burguer {
+        display:initial;
     }
 
     .menu .navbar {
@@ -268,7 +267,7 @@ footer {
     }
 
     #menu:checked ~ .navbar {
-        display: initial;
+        display: inline-block;
     }
 
     header {
@@ -282,6 +281,10 @@ footer {
         text-align: map-get($flex, center );
         align-items: center;
         padding: 0px 30px;
+    }
+    
+    .header-content .content {
+        padding: 0%;
     }
 
     .content {
@@ -365,4 +368,5 @@ footer {
     .enlace {
         flex-direction: column;
     }
+
 }

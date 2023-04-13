@@ -56,6 +56,8 @@ header {
       font-weight: 700;
       font-size: 25px;
       color: #ffffff; }
+    header .menu .burguer {
+      cursor: pointer; }
     header .menu .navbar ul li {
       position: relative;
       float: left; }
@@ -68,16 +70,13 @@ header {
       display: none; }
     header .menu .menu-icono {
       width: 25px; }
-    header .menu .menu label {
-      cursor: pointer;
-      display: none; }
   header .header-content {
     display: flex; }
     header .header-content .content {
       padding: 150px 150px 0px 0px; }
       header .header-content .content h1 {
         color: #ffffff;
-        font-size: 55px;
+        font-size: 5vh;
         text-transform: uppercase;
         font-weight: 500;
         line-height: 55px; }
@@ -85,7 +84,7 @@ header {
         margin-top: 25px;
         color: #aab1ff;
         text-transform: uppercase;
-        font-size: 35px;
+        font-size: 4vh;
         line-height: 40px; }
       header .header-content .content .btn-1 {
         display: inline-block;
@@ -191,7 +190,7 @@ footer {
 @media (max-width: 991px) {
   .menu {
     padding: 20px; }
-  .menu label {
+  .burguer {
     display: initial; }
   .menu .navbar {
     position: absolute;
@@ -203,7 +202,7 @@ footer {
   .menu .navbar ul li {
     width: 100%; }
   #menu:checked ~ .navbar {
-    display: initial; }
+    display: inline-block; }
   header {
     height: 0vh;
     padding: 500px 0px;
@@ -213,6 +212,8 @@ footer {
     text-align: center;
     align-items: center;
     padding: 0px 30px; }
+  .header-content .content {
+    padding: 0%; }
   .content {
     padding: 0px; }
   .content h1 {
